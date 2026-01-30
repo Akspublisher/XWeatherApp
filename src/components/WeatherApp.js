@@ -1,17 +1,12 @@
-import { useEffect, useState} from "react";
 import WeathersCard from "./WeathersCard";
+import React, {useState} from "react";
 
 export default function WeatherApp() {
 const [weatherData, setWeatherData] = useState(null);
 const [city, setCity] = useState("");
 const [loading, setLoading] = useState(false);
 
-
-
 const apiKey = "eb45132fe7614ff59a8105539263001";
-
-    //const endPoint = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
-    //useEffect(() => { 
         const fetchWeatherData = async () => {
         if(!city) return;
         setLoading(true);
@@ -31,7 +26,7 @@ try {
   return (
     <div>
       <h1 style={{marginBottom:"10px"
-        
+
       }}>Welcome to WeatherApp</h1>
      <input type="text" 
         placeholder="Enter city name"
