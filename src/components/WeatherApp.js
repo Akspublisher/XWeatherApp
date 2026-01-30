@@ -35,7 +35,7 @@ try {
         style={{padding:"10px", width:"200px", marginRight:"10px"}}/>
         <button style={{padding:"10px"}} onClick={fetchWeatherData}>Search</button>
     
-     {loading && <p>Loading data…</p>}
+     {loading && <p>Loading data...</p>}
     {weatherData && (
     <WeathersCard  
     temp={weatherData.current.temp_c}
