@@ -24,7 +24,7 @@ try {
 };
 
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
       <h1 style={{marginBottom:"10px"
 
       }}>Welcome to WeatherApp</h1>

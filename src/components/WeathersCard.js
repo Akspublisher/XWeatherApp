@@ -1,11 +1,12 @@
 import React from "react";
+import "./WeathersCard.css";
 
 export default function WeathersCard({temp, humidity, condition, windSpeed}) {
 
 
 
   return (
-    <div className="weather-cards">
+    <div className="weather-cards">  
           <div className="weather-card">
             <h4>Temperature</h4>
             <p>{temp} °C</p>

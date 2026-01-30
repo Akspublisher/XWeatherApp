@@ -3,7 +3,7 @@ import WeatherApp from './components/WeatherApp';
 
 function App() {
   return (
-    <div>
+    <div style={{backgroundColor: "#f0f8ff", minHeight: "100vh"}}>
       <WeatherApp />
     </div>
   );
